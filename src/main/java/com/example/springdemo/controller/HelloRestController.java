@@ -17,5 +17,10 @@ public class HelloRestController {
         return "Hello " + name + " !";
     }
 
+    @GetMapping("/params/{name}")
+    public String sayHelloParam(@PathVariable String name) {
+        return "Hello " + name + " !";
+    }
+
 
 }
